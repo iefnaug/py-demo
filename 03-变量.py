@@ -1,3 +1,5 @@
+import math
+
 if __name__ == '__main__':
     # 整型
     print(0b11)
@@ -53,3 +55,14 @@ if __name__ == '__main__':
     print(a)  # 大家算一下这里会输出什么
 
     print((a := 10))
+
+    # f = float(input('请输入华氏温度'))
+    # c = (f - 32) / 1.8
+    # print('%.1f华氏温度=%.1f摄氏度' % (f, c))
+    # print(f'{f:.2f}华氏温度={c:.1f}摄氏温度')
+
+    radis = float(input('请输入圆的半径：'))
+    perimeter = 2 * math.pi * radis
+    area = math.pi * radis ** 2
+    print('圆的周长: %.2f' % perimeter)
+    print(f'圆的面积: {area:.2f}')
