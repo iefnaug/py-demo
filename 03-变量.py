@@ -61,8 +61,19 @@ if __name__ == '__main__':
     # print('%.1f华氏温度=%.1f摄氏度' % (f, c))
     # print(f'{f:.2f}华氏温度={c:.1f}摄氏温度')
 
-    radis = float(input('请输入圆的半径：'))
-    perimeter = 2 * math.pi * radis
-    area = math.pi * radis ** 2
-    print('圆的周长: %.2f' % perimeter)
-    print(f'圆的面积: {area:.2f}')
+    # radis = float(input('请输入圆的半径：'))
+    # perimeter = 2 * math.pi * radis
+    # area = math.pi * radis ** 2
+    # print('圆的周长: %.2f' % perimeter)
+    # print(f'圆的面积: {area:.2f}')
+
+    # radis = float(input('请输入圆的半径：'))
+    # perimeter = 2 * math.pi * radis
+    # area = math.pi * radis ** 2
+    # print(f'圆的周长: {perimeter = :.2f}')
+    # print(f'圆的面积: {area = :.2f}')
+
+    #判断闰年
+    year = int(input('input year: '))
+    is_leap = year % 4 == 0 and year % 100 != 0 or year % 400 == 0
+    print(f'{is_leap}')
