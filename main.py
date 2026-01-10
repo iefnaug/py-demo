@@ -1,16 +1,9 @@
-# This is a sample Python script.
+import func
+from func import is_prime
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    for _ in range(5):
+        code = func.generate_code(code_len=6)
+        print(code)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    print(is_prime(11))
